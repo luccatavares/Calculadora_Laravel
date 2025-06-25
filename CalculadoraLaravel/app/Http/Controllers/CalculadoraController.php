@@ -42,7 +42,7 @@ class CalculadoraController extends Controller
     public function calcularSubtracao(Request $req)
     {
         $qtd = $req->input('quantidade');
-        $resultado = $req->input('n1'); // ponto de partida
+        $resultado = $req->input('n1');
 
         for ($i = 2; $i <= $qtd; $i++) {
             $valor = $req->input('n' . $i);
